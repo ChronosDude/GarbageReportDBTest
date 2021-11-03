@@ -14,7 +14,7 @@ namespace Controllers
     {
         [HttpGet]
         [Route("")]
-        public IActionResult GetAll() //metodo que obtiene todos los pois de la base mostando TODOS sus elementos ya no le aplicamos ningun DTO
+        public IActionResult GetAll() //metodo que obtiene todos los pois de la base mostando los elementos que definimos en el  DTO
         {
             var repository = new UserSqlRepository();
             var persons = repository.GetAll();
